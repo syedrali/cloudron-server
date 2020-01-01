@@ -1,0 +1,3 @@
+#! /bin/bash
+
+sshfs -o allow_other -p ssh_port user@storage_server:/home/storage/cloudron-backups cloudron-backups/
