@@ -1,3 +1,3 @@
 #! /bin/bash
 
-sshfs -o allow_other -p ssh_port user@storage_server:/home/storage/cloudron-backups cloudron-backups/
+sshfs -o allow_other,reconnect -p 2262 storage@10.223.133.223:/home/storage/cloudron-backups /var/cloudron-backups/
